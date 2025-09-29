@@ -41,6 +41,9 @@
     <link rel="stylesheet" href="app/styles/base.css">
     <link rel="stylesheet" href="app/styles/input.css">
 
+    <!-- 1. Adicionar o ficheiro CSS para o fundo Matrix -->
+    <link rel="stylesheet" href="app/styles/matrix-background.css">
+
     <!-- Images that will later appear via CSS -->
     <link rel="preload" as="image" href="app/images/info.svg">
     <link rel="preload" as="image" href="app/images/error.svg">
@@ -100,6 +103,9 @@
 </head>
 
 <body>
+
+    <!-- 2. Adicionar o canvas para a animação -->
+    <canvas id="canv"></canvas>
 
     <div id="noVNC_fallback_error" class="noVNC_center">
         <div>
@@ -412,5 +418,8 @@
         <source src="app/sounds/bell.oga" type="audio/ogg">
         <source src="app/sounds/bell.mp3" type="audio/mpeg">
     </audio>
+
+    <!-- 3. Adicionar o ficheiro JavaScript para o fundo Matrix -->
+    <script src="app/matrix-background.js"></script>
  </body>
 </html>
